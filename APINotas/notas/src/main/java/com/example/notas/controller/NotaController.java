@@ -41,10 +41,8 @@ public class NotaController {
         return noteResponse;
     }
 
-
     @PostMapping("/notes")
     public nota createNote(@Valid @RequestBody nota nota1){
         return noteRepository.save(nota1);
-
     }
 }
